@@ -6,11 +6,11 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = '7aabe28ef120c5b2e6fdee203f6a942d7306fcff'
+AESD_ASSIGNMENTS_VERSION = '004ae795952c84069e2e3a968c0b692f99d3bda0'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
-AESD_ASSIGNMENTS_SITE = 'https://github.com/geraldolsribeiro/ecen-5713-assigments.git'
+AESD_ASSIGNMENTS_SITE = 'git@github.com:geraldolsribeiro/ecen-5713-assigments.git'
 AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
 
