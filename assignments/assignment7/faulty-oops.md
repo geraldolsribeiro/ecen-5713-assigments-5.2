@@ -1,3 +1,8 @@
+# Test of faulty module
+
+Module is loaded on boot:
+
+```
 Loading scull (loading file /lib/modules/5.15.18/kernel/drivers/misc/scull.ko)scull: loading out-of-tree module taints kernel.
 scullsingle registered at f800008
 sculluid registered at f800009
@@ -12,7 +17,11 @@ Add a node for our device at /dev/faulty using mknod
 Change group owner to staff
 Change access mode to 664
 .
+```
 
+Write string on `/dev/faulty` file to get the faulty:
+
+```
 Welcome to Buildroot
 buildroot login: root
 Password: 
@@ -62,4 +71,4 @@ Code: d2800001 d2800000 d503233f d50323bf (b900003f)
 
 Welcome to Buildroot
 buildroot login: 
-
+```
