@@ -1,0 +1,29 @@
+#!/bin/sh
+set -e
+
+NAME=lddmodules
+
+case "$1" in
+    start)
+        echo "loading modules"
+        insmod /lib/modules/5.15.18/kernel/drivers/misc/scull.ko 
+        insmod /lib/modules/5.15.18/kernel/drivers/misc/faulty.ko 
+        insmod /lib/modules/5.15.18/kernel/drivers/misc/hello.ko 
+        # scull_load
+        # module_load faulty
+        # modprobe hello
+    ;;
+    stop)
+        echo "unloading modules"
+        #scull_unload
+        #module_unload faulty
+        rmmod hello
+        rmmod faulty
+        rmmod scull
+    ;;
+    *)
+        echo "Usage: $0 {start|stop}"
+        exit 1
+esac
+
+exit 0
